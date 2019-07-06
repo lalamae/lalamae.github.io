@@ -33,6 +33,12 @@ img.-circle-sm {
     flex-direction: row;
 }
 
+@media (max-width: 600px) {
+    .main-screen .-right-image-container img {
+        height: 100%;
+        
+    }
+
 .hero-title {
     font-weight: 500;
     font-size: 65px;
@@ -46,6 +52,8 @@ img.-circle-sm {
 .main-screen .-content,
 .main-screen .-right-image-container img {
     height: 100%;
+
+
 }
 /* End of Main Screen Styles */
 
@@ -172,16 +180,19 @@ img.-circle-sm {
 /* End of Employment History Styles */
 
 .fade-in-right {
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     animation-name: fadeInRight;
 }
 
 @keyframes fadeInRight {
     0% {
         opacity: 0;
+        transform: translateX(40px), -40px;
+       
     }
 
     100%{
         opacity: 1;
+        transform: translateX(40px);
     }
 }
